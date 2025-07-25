@@ -150,7 +150,7 @@ const ProductDetail = () => {
             <h1 className="text-base font-bold uppercase opacity-70 md:opacity-80 lg:text-end">
               Every Creation, A Cause
             </h1>
-            <p className="mt-4 text-[1.7rem] uppercase opacity-70 md:pl-[1rem] md:text-[2.5rem] lg:text-end">
+            <p className="mt-4 mb-10 md:mb-0 text-[1.7rem] uppercase opacity-70 md:pl-[1rem] md:text-[2.5rem] lg:text-end">
               By choosing this product, you’re not making a purchase — you’re
               making a promise. A promise to respect, restore, and reconnect
               with nature.
