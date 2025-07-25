@@ -1,0 +1,133 @@
+.product-wrapper {
+  background-color: #f1efeb;
+  overflow: hidden !important;
+
+  .product-card {
+    border: 1px solid #212121;
+    border-right: none;
+    border-top: none;
+    overflow: hidden !important;
+    transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.95);
+    padding: 1.5rem;
+    z-index: 22;
+
+    .product-image {
+      transition: all 0.2s cubic-bezier(0.2, 0.6, 0.2, 1);
+
+      img {
+        transition: transform 0.7s cubic-bezier(0.2, 0.6, 0.2, 1);
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 0%;
+      z-index: -1;
+      background-color: var(--after-bg);
+
+      transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.95);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: translateY(100%);
+      z-index: -1;
+      background-color: var(--after-bg);
+      // transition: all 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.95) 0.6s;
+      transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.95) 0.6s;
+      // transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.95) 0.2s ;
+    }
+
+    &:hover {
+      // padding: 2rem;
+      .product-image img {
+        transform: scale(1.25);
+      }
+    }
+
+    &:hover::after {
+      height: 100%;
+    }
+
+    &:hover::before {
+      transform: translateY(0%);
+    }
+
+    .product-right {
+      .product-right-top {
+        .brand {
+          h3 {
+            line-height: 1.2;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #212121;
+            letter-spacing: 1px;
+          }
+        }
+      }
+
+      .product-info {
+        h3 {
+          font-weight: 600;
+          color: #212121;
+        }
+
+        p {
+          margin-top: 0.5rem;
+          font-weight: 500;
+          opacity: 0.8;
+          line-height: 1;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .product-wrapper {
+    .product-card {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+
+      .product-image {
+        width: 100%;
+        overflow: hidden;
+        height: 400px;
+        margin-top: 6rem;
+
+
+        position: relative;
+      }
+
+      .product-image img {
+        width: 100%;
+        // height: auto;
+      }
+
+      .product-right {
+        .product-right-top {
+         
+          .brand h3 {
+            font-size: 0.9rem;
+          }
+        }
+
+        .product-info {
+           position: absolute;
+          top: 1rem;
+        }
+
+        
+      }
+    }
+  }
+}

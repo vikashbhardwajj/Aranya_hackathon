@@ -1,0 +1,149 @@
+.section.login {
+
+    
+  .topp {
+    position: relative;
+    .regs {
+      position: relative;
+      transition: all 0.3s ease-in-out;
+      text-decoration: none;
+      z-index: 10;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 4px;
+        background-color: rgba(45, 18, 69, 0.792); // Add a visible color for the underline
+        bottom: 9px;
+        left: 0;
+        z-index: -1;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover::after {
+       width: 100%;
+      }
+    }
+  }
+
+  .login_wrapper {
+    .login_left {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      position: relative;
+      aspect-ratio: 1 / 1;
+      background-color: #fcfcfc;
+
+      .circu {
+        background:
+          linear-gradient(rgba(255, 166, 0, 0.756), rgba(255, 0, 0, 0.553)),
+          url("https://assets.codepen.io/16327/noise-e82662fe.png");
+        background-blend-mode: color-dodge;
+        background-color: rgba(214, 51, 22, 0.611);
+
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.3s ease-in;
+        filter: blur(2px);
+
+        animation: move 6s cubic-bezier(0.19, 1, 0.22, 1) infinite alternate;
+
+        &:hover {
+          transform: translate(-50%, -50%) scale(1.05);
+          animation-play-state: paused;
+          filter: blur(5px);
+        }
+
+        @keyframes move {
+          0% {
+            transform: translate(-48%, -52%) rotate(0deg);
+          }
+          100% {
+            transform: translate(-52%, -48%) rotate(720deg);
+          }
+        }
+      }
+
+      .login_left_left {
+        background-color: rgba(33, 31, 31, 0.049);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+      }
+      .login_left_right {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: space-between;
+      }
+    }
+
+    .login_right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .form_section {
+        z-index: 10;
+        position: relative;
+        background-color: rgba(33, 31, 31, 0.049);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(5px);
+
+        h1,
+        p {
+          color: rgb(48, 48, 46);
+          line-height: 1;
+        }
+
+        form {
+          button {
+            background:
+              radial-gradient(
+                129% 99% at 112% 85%,
+                rgb(223, 220, 255) 20%,
+                rgb(166, 158, 255) 90%
+              ),
+              url("https://assets.codepen.io/16327/noise-e82662fe.png");
+            background-blend-mode: color-dodge;
+            color: rgb(167, 17, 184);
+            overflow: hidden;
+
+            transition: all 0.3s ease-in-out;
+            &:active {
+              transform: scale(0.8);
+              background-color: rgba(255, 255, 255, 0.1);
+            }
+          }
+
+          label {
+            color: rgb(13, 13, 14);
+            font-weight: 600;
+            font-size: medium;
+            letter-spacing: 1px;
+          }
+
+          input {
+            color: rgb(49, 5, 54);
+            font-family: monospace;
+            font-weight: 600;
+            font-size: large;
+
+            padding: 0.5rem;
+            width: 100%;
+            border-bottom: 1px solid rgb(49, 5, 54);
+            letter-spacing: 2px;
+
+            transition: all 0.3s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}

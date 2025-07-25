@@ -1,0 +1,343 @@
+[
+  {
+    "id": "banyan",
+    "name": "Banyan Tree",
+    "image": "/assets/product-img/banyan.jpg",
+    "description": "A giant shelter of life, strength, and calm.",
+    "category": "sacred",
+    "color": "#5e7f5d",
+    "intro": "Rooted in centuries, spreading with grace — the banyan offers a home to life’s every face.",
+    "symbolic": "In Indian lore, the banyan is the kalpavriksha — the wish-fulfilling tree. It shelters sages, birds, and wanderers alike. With its aerial roots and massive canopy, it represents eternity, community, and wisdom.",
+    "impact": [
+      "Provides cooling shade in rural and urban spaces",
+      "Supports countless species from birds to ants",
+      "Powerful carbon sink — absorbs massive CO₂",
+      "A living symbol of harmony in biodiversity"
+    ],
+    "benefits": ["Provides shade", "Supports biodiversity", "Absorbs CO₂"],
+    "cta": "Stand Tall"
+  },
+  {
+    "id": "sunlight",
+    "name": "Morning Sunlight",
+    "image": "/assets/product-img/sunlight.jpg",
+    "description": "Golden rays energizing all life daily.",
+    "category": "element",
+    "color": "#C5A445",
+    "intro": "Golden light spills on petals and palms — the Earth exhales in peace and calm.",
+    "symbolic": "Sunlight is the first whisper of life each day. It energizes, heals, and connects every being through its rhythm. In Ayurveda, it is the source of balance.",
+    "impact": [
+      "Boosts serotonin — improves mood and mental clarity",
+      "Helps in natural synthesis of Vitamin D",
+      "Fuels photosynthesis — lifeblood of all green systems"
+    ],
+    "benefits": ["Boosts mood", "Activates vitamin D", "Supports growth"],
+    "cta": "Embrace Light"
+  },
+  {
+    "id": "river",
+    "name": "Mountain River",
+    "image": "/assets/product-img/river.jpg",
+    "description": "Pure flow that nourishes land and soul.",
+    "category": "water",
+    "color": "#6EA199",
+    "intro": "Born in snow, sculpted by stone — the river sings through valleys alone.",
+    "symbolic": "Rivers in Indian culture are revered as mothers and goddesses. A mountain river is both untamed and nurturing — it teaches us to flow, adapt, and give endlessly.",
+    "impact": [
+      "Source of fresh water",
+      "Supports aquatic and surrounding life",
+      "Regulates climate and maintains soil fertility"
+    ],
+    "benefits": ["Provides fresh water", "Supports wildlife", "Cools climate"],
+    "cta": "Flow Free"
+  },
+  {
+    "id": "honeybee",
+    "name": "Honeybee",
+    "image": "/assets/product-img/honeybee.jpg",
+    "description": "Tiny pollinator keeping ecosystems alive.",
+    "category": "insect",
+    "color": "#f6bd60",
+    "intro": "Wings that hum life into every petal.",
+    "symbolic": "Honeybees symbolize community, diligence, and the interconnectedness of all living beings.",
+    "impact": [
+      "Pollinates 75% of global food crops",
+      "Supports floral reproduction and biodiversity",
+      "Creates honey, propolis, and wax — nature’s gifts"
+    ],
+    "benefits": ["Pollinates crops", "Supports biodiversity", "Makes honey."],
+    "cta": "Buzz Pure"
+  },
+  {
+    "id": "neem",
+    "name": "Neem Tree",
+    "image": "/assets/product-img/neem.jpg",
+    "description": "Nature's medicine — powerful, pure, and protective.",
+    "category": "healing",
+    "color": "#5E936C",
+    "intro": "The silent sentinel with bitter strength and sacred breath.",
+    "symbolic": "Considered sacred in Ayurveda, Neem is known as 'Sarva Roga Nivarini' — the universal healer.",
+    "impact": [
+      "Purifies air and detoxifies surroundings",
+      "Natural pesticide and skin remedy",
+      "Boosts immunity and spiritual cleansing"
+    ],
+    "benefits": ["Fights infection", "Purifies air", "Repels pests."],
+    "cta": "Heal Green"
+  },
+  {
+    "id": "mountains",
+    "name": "Snowy Mountains",
+    "image": "/assets/product-img/mountain.jpg",
+    "description": "Majestic, still guardians of Earth’s core.",
+    "category": "landform",
+    "color": "#c0d6df",
+    "intro": "Where the clouds bow and silence becomes sacred.",
+    "symbolic": "Mountains represent endurance, spiritual elevation, and divine connection in many traditions.",
+    "impact": [
+      "Store fresh water as snow and ice",
+      "Regulate regional climate patterns",
+      "Support unique high-altitude life forms"
+    ],
+    "benefits": ["Regulate climate", "store water", "inspire awe."],
+    "cta": "Climb High"
+  },
+  {
+    "id": "lotus",
+    "name": "Lotus Flower",
+    "image": "/assets/product-img/lotus.jpg",
+    "description": "Beauty blooming in the mud — divine.",
+    "category": "flower",
+    "color": "#E966A0",
+    "intro": "Petals kissed by dawn, rooted in sacred stillness.",
+    "symbolic": "Symbol of spiritual awakening, the lotus blooms untouched in murky waters — purity rising from chaos.",
+    "impact": [
+      "Used in meditation, art, and skincare",
+      "Cultural symbol in Buddhism and Hinduism",
+      "Supports aquatic life in its habitat"
+    ],
+    "benefits": ["Symbol of purity", "used in skincare and healing."],
+    "cta": "Bloom Bright"
+  },
+  {
+    "id": "tulsi",
+    "name": "Tulsi Plant",
+    "image": "/assets/product-img/tulsi.jpg",
+    "description": "Small, sacred, and medicinally mighty.",
+    "category": "medicinal",
+    "color": "#627d4f",
+    "intro": "A holy leaf with the heart of a healer.",
+    "symbolic": "Revered as a goddess, Tulsi is placed at the threshold of homes — a living altar of health and purity.",
+    "impact": [
+      "Boosts immunity and reduces stress",
+      "Purifies air with anti-bacterial properties",
+      "Used in teas, oils, and Ayurvedic remedies"
+    ],
+    "benefits": ["Boosts immunity", "purifies air", "reduces stress."],
+    "cta": "Heal with Tulsi"
+  },
+  {
+    "id": "peacock",
+    "name": "Indian Peacock",
+    "image": "/assets/product-img/peacock.jpg",
+    "description": "Graceful feathers of pride and color.",
+    "category": "bird",
+    "color": "#58A0C8",
+    "intro": "The sky walks the earth when the peacock dances.",
+    "symbolic": "National bird of India — symbol of grace, beauty, and divine protection in Hindu myths.",
+    "impact": [
+      "Controls pests and snakes naturally",
+      "Cultural and spiritual icon in art",
+      "Signals ecological health in an area"
+    ],
+    "benefits": ["Pest control", "cultural symbol", "visual delight."],
+    "cta": "Dance with Grace"
+  },
+  {
+    "id": "aloe",
+    "name": "Aloe Vera",
+    "image": "/assets/product-img/aloe.avif",
+    "description": "Hydrating healer for skin and within.",
+    "category": "medicinal",
+    "color": "#88c999",
+    "intro": "Green glass of the Earth, full of inner healing.",
+    "symbolic": "Aloe is the symbol of rejuvenation and self-regeneration — from burns to beauty.",
+    "impact": [
+      "Soothes burns and skin irritation",
+      "Aids digestion and gut health",
+      "Used in wellness, cosmetics, and air purification"
+    ],
+    "benefits": ["Soothes burns", "aids digestion", "purifies air."],
+    "cta": "Soothe Skin"
+  },
+  {
+    "id": "rose",
+    "name": "Wild Rose",
+    "image": "/assets/product-img/rose.jpg",
+    "description": "Symbol of love, scent, and beauty.",
+    "category": "flower",
+    "color": "#F7A8C4",
+    "intro": "Fragrance of affection blooming in thorns.",
+    "symbolic": "Roses symbolize the heart — passion, sorrow, and divine grace in all its colors.",
+    "impact": [
+      "Used in skincare and herbal therapy",
+      "Aromatic healing and emotional balance",
+      "Nourishes pollinators and decorates landscapes"
+    ],
+    "benefits": ["Used in skincare", "perfumes", "and mood upliftment."],
+    "cta": "Smell love"
+  },
+  {
+    "id": "air",
+    "name": "Fresh Morning Air",
+    "image": "/assets/product-img/air.jpg",
+    "description": "Invisible yet vital — pure life.",
+    "category": "element",
+    "color": "#cdeef4",
+    "intro": "What we do not see, still we breathe and believe.",
+    "symbolic": "Air is prana — the breath of the divine — silent carrier of life’s pulse.",
+    "impact": [
+      "Improves oxygen intake and mental clarity",
+      "Reduces toxins and stress",
+      "Vital for plant and animal survival"
+    ],
+    "benefits": ["Improves breathing", "sharpens focus", "energizes body."],
+    "cta": "Breathe In"
+  },
+  {
+    "id": "jackfruit",
+    "name": "Jackfruit Tree",
+    "image": "/assets/product-img/jackfruit.jpg",
+    "description": "Sustainable giant fruit of nourishment.",
+    "category": "fruit",
+    "color": "#9eaf4f",
+    "intro": "Green bounty hanging heavy with nutrition.",
+    "symbolic": "A symbol of abundance and self-sufficiency, jackfruit sustains many in rural India.",
+    "impact": [
+      "High-fiber vegan meat alternative",
+      "Supports food security and zero waste",
+      "Every part is usable — from fruit to bark"
+    ],
+    "benefits": ["High in fiber", "meat substitute", "grows abundantly."],
+    "cta": "Taste Earth"
+  },
+  {
+    "id": "sandalwood",
+    "name": "Sandalwood Tree",
+    "image": "/assets/product-img/sandalwood.jpg",
+    "description": "Fragrance of purity, peace, and divinity.",
+    "category": "sacred",
+    "color": "#d2b48c",
+    "intro": "Aromatic soul of the forest, revered and rare.",
+    "symbolic": "Used in spiritual rituals, sandalwood represents serenity, detachment, and enlightenment.",
+    "impact": [
+      "Used in perfumes, oils, and incense",
+      "Promotes calm and meditation",
+      "Endangered — promotes sustainable forestry"
+    ],
+    "benefits": ["Aromatic oil", "spiritual use", "calms the mind."],
+    "cta": "Carry Calm"
+  },
+  {
+    "id": "bamboo",
+    "name": "Bamboo",
+    "image": "/assets/product-img/bamboo.jpg",
+    "description": "Fast-growing, flexible, and eco-friendly.",
+    "category": "utility",
+    "color": "#a3d977",
+    "intro": "The green spine of sustainable living.",
+    "symbolic": "Symbol of resilience, humility, and strength in Asian cultures.",
+    "impact": [
+      "Builds homes, tools, and crafts",
+      "Absorbs carbon and restores soil",
+      "Biodegradable, renewable, and strong"
+    ],
+    "benefits": ["Builds homes", "absorbs CO₂", "restores land."],
+    "cta": "Grow Light"
+  },
+  {
+    "id": "coconut",
+    "name": "Coconut Tree",
+    "image": "/assets/product-img/coconut.jpg",
+    "description": "Gives food, oil, and shelter — complete life.",
+    "category": "utility",
+    "color": "#c2a16d",
+    "intro": "Every part, a gift — from husk to heart.",
+    "symbolic": "Coconut is a tree of life in coastal regions — resilience, resource, and ritual.",
+    "impact": [
+      "Nutritious water, milk, and pulp",
+      "Wood and husk used in housing and rope",
+      "Sustains coastal communities for centuries"
+    ],
+    "benefits": ["Nutritious fruit", "versatile oil", "sustainable wood."],
+    "cta": "Gift life"
+  },
+  {
+    "id": "mint",
+    "name": "Mint Leaves",
+    "image": "/assets/product-img/mint.jpg",
+    "description": "Cooling herb for body and breath.",
+    "category": "herb",
+    "color": "#a5a5a5",
+    "intro": "A breath of cool in fire and heat.",
+    "symbolic": "Mint is refreshment — the herb of clarity and comfort.",
+    "impact": [
+      "Aids digestion and refreshes breath",
+      "Used in culinary, teas, and therapy",
+      "Repels pests naturally"
+    ],
+    "benefits": ["Aids digestion", "freshens breath", "relieves nausea."],
+    "cta": "Feel Cool"
+  },
+  {
+    "id": "amla",
+    "name": "Amla Tree",
+    "image": "/assets/product-img/amla.jpg",
+    "description": "Tiny fruit with immense healing power.",
+    "category": "healing",
+    "color": "#c4c8cc",
+    "intro": "A drop of nature’s wisdom wrapped in green.",
+    "symbolic": "Amla represents longevity, health, and sacred nourishment in Ayurveda.",
+    "impact": [
+      "Rich in vitamin C and antioxidants",
+      "Used in hair, skin, and internal health",
+      "Prevents aging and boosts immunity"
+    ],
+    "benefits": ["Boosts immunity", "improves vision", "anti-aging."],
+    "cta": "Stay Strong"
+  },
+  {
+    "id": "owl",
+    "name": "Forest Owl",
+    "image": "/assets/product-img/owl.jpg",
+    "description": "Silent watcher of the moonlit wild.",
+    "category": "bird",
+    "color": "#776f61",
+    "intro": "With eyes that pierce the dark and wings that whisper wisdom.",
+    "symbolic": "Owls symbolize deep vision, intuition, and ecological balance — often revered in mythology as seers of truth.",
+    "impact": [
+      "Controls rodent population naturally",
+      "Indicator of a healthy forest ecosystem",
+      "Represents balance in nocturnal biodiversity"
+    ],
+    "benefits": ["Controls pests", "balances ecosystem", "symbolic wisdom."],
+    "cta": "See Deep"
+  },
+  {
+    "id": "riverstone",
+    "name": "River Stone",
+    "image": "/assets/product-img/riverstone.jpg",
+    "description": "Calming energy shaped by flowing water.",
+    "category": "earth",
+    "color": "#a5a5a5",
+    "intro": "Time-carved calm beneath running rivers.",
+    "symbolic": "River stones symbolize resilience, grounding, and timeless endurance — nature’s meditation beads.",
+    "impact": [
+      "Used in healing practices and home decor",
+      "Symbolizes peace and stability in landscaping",
+      "Carries history of the river that shaped it"
+    ],
+    "benefits": ["Holds grounding energy", "decor use", "symbolic balance."],
+    "cta": "Hold Still"
+  }
+]

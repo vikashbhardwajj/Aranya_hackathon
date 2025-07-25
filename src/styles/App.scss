@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+::selection {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+*::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+
+html.lenis {
+  height: auto;
+}
+
+.lenis-smooth-wrapper {
+  overflow: hidden;
+}
+
+.lenis-smooth-content {
+  will-change: transform;
+}
+
+.section {
+  min-height: 100vh;
+  background-color: #fcfcfc;
+
+  // background:
+  //   radial-gradient(
+  //     129% 99% at 112% 85%,
+  //     rgb(223, 220, 255) 20%,
+  //     rgb(166, 158, 255) 90%
+  //   ),
+  //   url("https://assets.codepen.io/16327/noise-e82662fe.png");
+  // background-blend-mode: color-dodge;
+}
+
+nav {
+  .nav-logo {
+    font-family: pp woodland ;
+
+    span {
+      letter-spacing: -2px;
+      font-family: "Times New Roman", Times, serif;
+      display: inline !important;
+      font-size: 2.4rem !important;
+      font-weight: 900;
+    }
+  }
+  .hamburger {
+    transition: background-color 0.3s ease-in-out;
+
+    .menu-text {
+      transition: all 0.2s ease-in;
+      user-select: none;
+    }
+    .menu {
+      background-color: greenyellow;
+      transition: all 0.3s cubic-bezier(0.6, 0.04, 0.38, 0.35);
+      overflow: hidden;
+
+      span:nth-child(1),
+      span:nth-child(3) {
+        background-color: rgb(3, 11, 4);
+        // transition: all 0.3s cubic-bezier(0.6, 0.04, 0.38, 0.35);
+        opacity: 0;
+      }
+    }
+
+    &:hover {
+      .menu-text {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+nav .hamburger:hover .menu {
+  scale: 1 !important;
+}
+
+nav .hamburger:hover span:nth-child(1),
+nav .hamburger:hover span:nth-child(3),
+nav .hamburger:hover span:last-child {
+  opacity: 1 !important;
+}
+// nav .hamburger:hover span:nth-child(2) {
+//  opacity: 0 !important;
+// }
+
+
+@media (max-width: 600px) {
+  
+
+  nav .nav-logo span {
+    font-size: 1.7rem !important;
+  }
+
+  .nav-menu{
+    // background-color: red;
+    width: 100vw !important;
+    left: 0 !important;
+
+
+    .body{
+      // font-family: 'Times New Roman', Times, serif;
+      // font-family: serif;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-family: serif;
+
+
+      .top{
+
+       
+        p{
+          font-size: 0.6rem;
+          font-family: serif;
+          font-family: 'Courier New', Courier, monospace;
+          
+        }
+
+        
+
+       
+      }
+
+      .footer{
+        // background-color: red;
+        font-size: 0.7rem;
+        font-family: monospace;
+
+      }
+    }
+    
+  }
+  
+}
