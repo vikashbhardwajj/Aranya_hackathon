@@ -16,7 +16,7 @@ Aranya is not an e-commerce platform — it's a **spiritual storefront** of natu
 
 ## 🌿 Live Website
 
-👉 [Visit Aranya on Vercel](https://aranya.vercel.app) (or your custom domain)
+👉 [Visit Aranya on Vercel]([https://aranya.vercel.app](https://aranya-five.vercel.app/)) 
 
 ---
 
@@ -48,5 +48,6 @@ Aranya is not an e-commerce platform — it's a **spiritual storefront** of natu
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/your-username/aranya.git
-   cd aranya
+   git clone https://github.com/vikashbhardwajj/Aranya_hackathon.git
+   Aranya_hackathon.
+ 
