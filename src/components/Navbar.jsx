@@ -49,7 +49,7 @@ export default function Navbar() {
     <nav className="fixed top-5 right-0 left-0 z-[50] flex items-center justify-between px-3 md:top-10 md:px-6">
       <div
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        className="nav-logo bg-white/20 backdrop-blur-2xl cursor-pointer text-2xl font-bold text-black"
+        className="nav-logo p-[0.5rem] rounded-xl md:p-[0.5rem] bg-white/20 backdrop-blur-xl cursor-pointer text-2xl font-bold text-black"
       >
         {"ARANYA".split("").map((char, index) => (
           <motion.span
