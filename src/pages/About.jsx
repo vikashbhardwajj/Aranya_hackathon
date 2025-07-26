@@ -9,6 +9,7 @@ import vid1 from "../assets/videos/abt.mp4";
 
 import "../styles/About.scss";
 import WavyText from "../components/WavyText";
+import { useEffect } from "react";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -53,6 +54,13 @@ export default function About() {
     return () => {
       tl.kill();
     };
+  });
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   });
 
   return (
@@ -160,7 +168,7 @@ export default function About() {
             </h3>
 
             <Link to="/products">
-              <button className="mt-6 text-2xl  rounded-md bg-black px-4 py-2 text-white/90 transition-colors duration-300 hover:bg-black/80">
+              <button className="mt-6 rounded-md bg-black px-4 py-2 text-2xl text-white/90 transition-colors duration-300 hover:bg-black/80">
                 <WavyText text="Explore Creations" />
               </button>
             </Link>
@@ -213,10 +221,6 @@ export default function About() {
             </div>
           </div>
         </div>
-      
-
-        
-      
       </div>
     </PageWrapper>
   );
