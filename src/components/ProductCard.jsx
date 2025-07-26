@@ -8,14 +8,14 @@ const ProductCard = () => {
   const boxRef = useRef(null);
 
   return (
-    <div className="main-container h-[100%] w-[100%] py-1">
+    <div className="main-container h-[100%] w-[100%] overflow-hidden py-1">
       <div
         ref={boxRef}
         className="product-wrapper flex w-full flex-wrap overflow-hidden border-y"
       >
         <CustomCurosr
           targetRef={boxRef}
-          className="flex items-center justify-center bg-black"
+          className="flex items-center justify-center bg-black backdrop-blur-md"
           size={150}
         >
           <i className="ri-arrow-right-up-line text-4xl text-white"></i>

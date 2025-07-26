@@ -20,7 +20,7 @@ export default function PageWrapper({
   const nbOfColumns = window.innerWidth < 640 ? 3 : 4;
   return (
     <motion.section
-      className={`section z-[500] px-3 pt-[6rem] md:pt-[8rem]  md:px-[1rem] ${className}`}
+      className={`section z-[500] overflow-hidden px-3 pt-[6rem] md:pt-[8rem]  md:px-[1rem] ${className}`}
       initial="initial"
       animate="animate"
       exit="exit"

@@ -52,7 +52,7 @@ const CustomCursor = ({ targetRef, className = "", size = 20, children}) => {
 
   return (
     <motion.div
-      className={`pointer-events-none absolute z-50 ${className}`}
+      className={`pointer-events-none absolute z-[40] ${className}`}
       animate={{ x: pos.x - size / 2, y: pos.y - size / 2 }}
       transition={{ type: "spring", stiffness: 500, damping: 70 }}
       style={{ width: size, height: size, borderRadius: "50%", position: "absolute" }}

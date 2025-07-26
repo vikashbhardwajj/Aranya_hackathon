@@ -309,7 +309,7 @@ const Home = ({ loaderDone }) => {
           </div>
         </div>
       </div>
-      <div className="home-content overflow-hidden flex w-full flex-col items-center justify-center gap-2">
+      <div className="home-content flex w-full flex-col items-center justify-center gap-2 overflow-hidden">
         <div className="page page1">
           <div className="gola"></div>
 
@@ -358,7 +358,7 @@ const Home = ({ loaderDone }) => {
             className="video1 rounded-md shadow-lg"
           ></video>
           <div className="page2-content relative flex h-full w-full flex-col justify-between gap-10 sm:flex-row">
-            <div className="page2-left-wraper p-3 relative flex flex-col gap-10 md:w-1/2">
+            <div className="page2-left-wraper relative flex flex-col gap-10 p-3 md:w-1/2">
               <div className="page-2-left sticky top-10 h-fit bg-white/10 shadow-md backdrop-blur-2xl">
                 <section className="page2-section relative flex justify-center px-6 py-20 text-gray-800">
                   <div className="max-w-4xl text-start">
@@ -421,7 +421,7 @@ const Home = ({ loaderDone }) => {
                   src={img2}
                   alt=""
                 />
-                <p className="mt-[4rem] mb-2 h-fit text-4xl font-bold md:mt-0 md:w-[90%] md:text-5xl lg:w-[80%]">
+                <p className="mt-[4rem] pb-5 mb-2 h-fit text-4xl font-bold md:mt-0 md:w-[90%] md:text-5xl lg:w-[80%]">
                   "Before trends and technology, we listened to the whisper of
                   trees, rivers, and winds."
                 </p>
@@ -430,23 +430,23 @@ const Home = ({ loaderDone }) => {
           </div>
         </div>
 
-        <div className="added_later2 p-[1rem] md:p-[2rem] ">
-          <p className="mb-6 text-xl leading-none font-bold tracking-wider uppercase opacity-70 md:w-[70%] md:text-3xl ">
+        <div className="added_later2 p-[1rem] md:p-[2rem]">
+          <p className="mb-6 text-xl leading-none font-bold tracking-wider uppercase opacity-70 md:w-[70%] md:text-3xl">
             Products We Offer
           </p>
-          <p className="mb-2 text-xl leading-none font-bold tracking-wider uppercase opacity-70 md:w-[70%] md:text-2xl ">
+          <p className="mb-2 text-xl leading-none font-bold tracking-wider uppercase opacity-70 md:w-[70%] md:text-2xl">
             Sacred trees & plants 🌳
           </p>
-          <p className="mb-2 text-xl leading-none font-bold tracking-wider uppercase opacity-70 md:w-[70%] md:text-2xl ">
+          <p className="mb-2 text-xl leading-none font-bold tracking-wider uppercase opacity-70 md:w-[70%] md:text-2xl">
             Healing elements 🌿
           </p>
-          <p className="mb-2 text-xl leading-none font-bold tracking-wider uppercase opacity-70 md:w-[70%] md:text-2xl ">
+          <p className="mb-2 text-xl leading-none font-bold tracking-wider uppercase opacity-70 md:w-[70%] md:text-2xl">
             Earth’s wildlife guardians 🦉
           </p>
-          <p className="mb-2 text-xl leading-none font-bold tracking-wider uppercase opacity-70 md:w-[70%] md:text-2xl ">
+          <p className="mb-2 text-xl leading-none font-bold tracking-wider uppercase opacity-70 md:w-[70%] md:text-2xl">
             Natural icons of purity 🌸
           </p>
-          <p className="mb-2 text-xl leading-none font-bold tracking-wider uppercase opacity-70 md:w-[70%] md:text-2xl ">
+          <p className="mb-2 text-xl leading-none font-bold tracking-wider uppercase opacity-70 md:w-[70%] md:text-2xl">
             Elements like air, water & sun 🌞
           </p>
         </div>
@@ -504,7 +504,7 @@ const Home = ({ loaderDone }) => {
                 </motion.h2>
                 <motion.p
                   variants={item}
-                  className="my-5 w-[90%] text-lg leading-relaxed text-gray-600 md:w-[70%] lg:w-[60%]"
+                  className="my-5 w-[90%] text-lg leading-none text-gray-600 md:w-[70%] lg:w-[60%]"
                 >
                   Stay connected to nature’s rhythm, beauty, and wisdom directly
                   in your mail.

@@ -7,11 +7,15 @@ body {
   width: 100%;
 }
 
+body{
+  
+  overflow-x: hidden;
+}
+
 ::selection {
   background: var(--bg-color);
   color: var(--text-color);
 }
-
 
 
 
@@ -30,6 +34,7 @@ html.lenis {
 .section {
   min-height: 100vh;
   background-color: #fcfcfc;
+  overflow: hidden;
 
   // background:
   //   radial-gradient(

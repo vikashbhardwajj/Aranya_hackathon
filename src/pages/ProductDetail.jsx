@@ -7,11 +7,14 @@ import "../styles/ProductDetail.scss";
 import PageWrapper from "../components/PageWrapper";
 import WavyText from "../components/WavyText";
 import img1 from "../assets/images/eye.png";
+import CustomCurosr from "../components/CustomCursor";
 
 const ProductDetail = () => {
   const param = useParams();
   const navigate = useNavigate();
   const { pathname } = useLocation();
+
+  const boxRef = useRef(null);
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -36,19 +39,27 @@ const ProductDetail = () => {
   }
 
   return (
-    <PageWrapper className="product-detail">
-      <div className="product_detail_wrapper">
+    <PageWrapper className="product-detail overflow-hidden">
+      <div ref={boxRef} className="product_detail_wrapper ">
+        <CustomCurosr
+          targetRef={boxRef}
+          className="flex items-center justify-center bg-purple-500/5 backdrop-blur-sm"
+          size={160}
+        >
+          <p className="text-4xl">🌿</p>
+        </CustomCurosr>
+
         <div className="page1 h-[30vh] md:h-[50vh]">
           <i
             onClick={() => navigate(-1)}
-            className="ri-arrow-left-line cursor-pointer text-6xl"
+            className="ri-arrow-left-line z-[50] cursor-pointer text-6xl"
           ></i>
           <div className="content md:gap-[1rem]">
             <h1 className="mb-7 text-[50px] -tracking-[3px] md:text-[8rem] lg:text-[12rem] lg:-tracking-[9px]">
               {product.name}
             </h1>
 
-            <h2 className="overflow-hidden rounded-full border px-4 py-1 text-base font-bold uppercase opacity-80">
+            <h2 className="overflow-hidden z-[45] rounded-full border px-4 py-1 text-base font-bold uppercase opacity-80">
               <WavyText text={product.category} />
             </h2>
           </div>
@@ -104,7 +115,7 @@ const ProductDetail = () => {
 
               <div className="right_bottom_right">
                 <button
-                  className="px-4 py-2 text-sm font-bold uppercase opacity-80"
+                  className="px-4 py-2 z-[45] text-sm font-bold uppercase opacity-80"
                   style={{ ["--color"]: product.color }}
                 >
                   <WavyText text={product.cta} />
@@ -150,7 +161,7 @@ const ProductDetail = () => {
             <h1 className="text-base font-bold uppercase opacity-70 md:opacity-80 lg:text-end">
               Every Creation, A Cause
             </h1>
-            <p className="mt-4 mb-10 md:mb-0 text-[1.7rem] uppercase opacity-70 md:pl-[1rem] md:text-[2.5rem] lg:text-end">
+            <p className="mt-4 mb-10 text-[1.7rem] uppercase opacity-70 md:mb-0 md:pl-[1rem] md:text-[2.5rem] lg:text-end">
               By choosing this product, you’re not making a purchase — you’re
               making a promise. A promise to respect, restore, and reconnect
               with nature.
@@ -158,7 +169,7 @@ const ProductDetail = () => {
             <a
               href="https://paudhshala.com/"
               target="_blank"
-              className="cta-2 absolute right-0 bottom-0 px-4 py-2 text-sm font-bold uppercase opacity-80"
+              className="cta-2 z-[45] absolute right-0 bottom-0 px-4 py-2 text-sm font-bold uppercase opacity-80"
               style={{ ["--color"]: product.color }}
             >
               <WavyText text={"Buy Now"} />
