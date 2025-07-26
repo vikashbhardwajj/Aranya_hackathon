@@ -358,7 +358,7 @@ const Home = ({ loaderDone }) => {
             className="video1 rounded-md shadow-lg"
           ></video>
           <div className="page2-content relative flex h-full w-full flex-col justify-between gap-10 sm:flex-row">
-            <div className="page2-left-wraper relative flex flex-col gap-10 md:w-1/2">
+            <div className="page2-left-wraper p-3 relative flex flex-col gap-10 md:w-1/2">
               <div className="page-2-left sticky top-10 h-fit bg-white/10 shadow-md backdrop-blur-2xl">
                 <section className="page2-section relative flex justify-center px-6 py-20 text-gray-800">
                   <div className="max-w-4xl text-start">
@@ -454,14 +454,14 @@ const Home = ({ loaderDone }) => {
           <div className="gallery-3d">
             <div className="cylinder">
               {[
-                "/timeline/1.avif",
-                "/timeline/2.avif",
-                "/timeline/3.avif",
-                "/timeline/4.avif",
-                "/timeline/5.avif",
-                "/timeline/6.avif",
-                "/timeline/7.jpg",
-                "/timeline/8.avif",
+                "/assets/product-img/honeybee.jpg",
+                "/assets/product-img/tulsi.jpg",
+                "/assets/product-img/rose.jpg",
+                "/assets/product-img/sunlight.jpg",
+                "/assets/product-img/sandalwood.jpg",
+                "/assets/product-img/mountain.jpg",
+                "/assets/product-img/peacock.jpg",
+                "/assets/product-img/owl.jpg",
               ].map((url, index) => (
                 <div
                   key={index}
@@ -480,7 +480,7 @@ const Home = ({ loaderDone }) => {
             onMouseEnter={(event) => mouseEnter(event)}
             onMouseLeave={(event) => mouseLeave(event)}
             src={vid2}
-            className="video1 rounded-md shadow-lg"
+            className="video2 rounded-md shadow-lg"
           ></video>
           <motion.div
             className="page3-top relative flex flex-col-reverse justify-between gap-10 pb-[1rem] md:flex-row md:pb-[5rem]"

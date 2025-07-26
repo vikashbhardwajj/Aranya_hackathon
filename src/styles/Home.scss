@@ -313,6 +313,18 @@
       height: fit-content;
       max-height: 100%;
 
+      .video2 {
+        aspect-ratio: 16 / 6 !important;
+        opacity: 1;
+        // width: 100% !important;
+        object-fit: cover;
+
+        @media screen and (max-width: 650px) {
+          aspect-ratio: 16 / 9 !important;
+          width: 100% !important;
+        }
+      }
+
       .page3-top {
         border-bottom: 1px solid #0808084c;
         overflow: hidden;
