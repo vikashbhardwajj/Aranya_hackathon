@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aranya-five.vercel.app/sitemap.xml

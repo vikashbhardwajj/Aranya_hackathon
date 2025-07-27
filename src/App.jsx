@@ -82,4 +82,3 @@ export default function App() {
   );
 }
 
-// project name Rooted, Aranya(sankrit for forest), Earthkind, Bloommark (a place where nature blooms), Vasudha(Vasudhauva Kutumbakam - the world is one family)

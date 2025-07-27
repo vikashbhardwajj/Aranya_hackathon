@@ -21,15 +21,18 @@ const Register = () => {
   const parentRef = useRef(null);
 
   const onSubmit = (data) => {
-    if (!data.name || !data.email || !data.password) {
-      toast.error("Please fill in all fields.");
+    const existingUser = JSON.parse(localStorage.getItem("user"));
+    if (existingUser) {
+      toast.error("User already exists. Please log in.");
+      navigate("/login");
+      reset();
       return;
+    } else {
+      localStorage.setItem("user", JSON.stringify(data));
+      toast.success("Registration successful! Welcome to Aranya 🌱");
+      navigate("/login");
+      reset();
     }
-
-    localStorage.setItem("user", JSON.stringify(data));
-    toast.success("Registration successful! Welcome to Aranya 🌱");
-    reset();
-    navigate("/login");
   };
 
   const currentDate = new Date();
@@ -103,15 +106,9 @@ const Register = () => {
             drag
             dragConstraints={parentRef}
             dragElastic={0.7}
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, ease: "easeInOut", delay: 0.4 }}
-            exit={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.5 }}
-            className="form_section w-full max-w-md rounded-xl relative p-8 shadow-md"
+            className="form_section relative w-full max-w-md rounded-xl p-8 shadow-md"
           >
-            <i className="ri-menu-3-line text-3xl absolute right-1 top-2 cursor-pointer "></i>
+            <i className="ri-menu-3-line absolute top-2 right-1 cursor-pointer text-3xl"></i>
             <h1 className="mb-4 text-start text-3xl font-semibold">
               Not Just a Sign-up, a Seedling
             </h1>

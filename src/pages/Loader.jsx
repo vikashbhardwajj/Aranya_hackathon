@@ -1,11 +1,9 @@
-import { delay } from "motion";
 import { motion, useMotionValue, animate } from "motion/react";
-import { h1, nav } from "motion/react-client";
 import { useEffect, useState, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 
-const Loader = ({onFinish}) => {
+const Loader = ({ onFinish }) => {
   const nbOfColumns = window.innerWidth < 640 ? 3 : 4;
 
   const navigate = useNavigate();
@@ -41,12 +39,13 @@ const Loader = ({onFinish}) => {
       },
       onComplete() {
         setHideLoader(true);
-        navigate("/");
-        setInterval(() => {
+        if (location.pathname === "/") {
+          navigate("/");
+        }
+
+        setTimeout(() => {
           onFinish();
         }, 250);
-
-       
       },
     });
 
