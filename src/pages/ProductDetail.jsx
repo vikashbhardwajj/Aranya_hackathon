@@ -8,7 +8,7 @@ import PageWrapper from "../components/PageWrapper";
 import WavyText from "../components/WavyText";
 import img1 from "../assets/images/eye.png";
 import CustomCurosr from "../components/CustomCursor";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 
 
 const ProductDetail = () => {

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 
 import "../styles/About.scss";
 import vid1 from "../assets/videos/abt.mp4";

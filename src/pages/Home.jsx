@@ -1,7 +1,7 @@
 import PageWrapper from "../components/PageWrapper";
 import { Link } from "react-router-dom";
 
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 import CustomCurosr from "../components/CustomCursor";
 import "../styles/Home.scss";
 import WavyText from "../components/WavyText";

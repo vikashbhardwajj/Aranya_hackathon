@@ -7,7 +7,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { motion } from "motion/react";
 import { useRef } from "react";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 
 const Login = () => {
   const {

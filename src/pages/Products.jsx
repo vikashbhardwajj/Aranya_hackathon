@@ -3,7 +3,7 @@ import ProductCard from "../components/ProductCard";
 import products from "../data/products.json";
 import vid1 from "../assets/videos/vid4.mp4";
 import "../styles/Products.scss";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 
 export default function Products() {
   return (
