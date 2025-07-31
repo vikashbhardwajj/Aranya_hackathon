@@ -15,6 +15,7 @@ import vid1 from "../assets/videos/video1.mp4";
 import vid2 from "../assets/videos/video2.mp4";
 import img2 from "../assets/images/img2.jpg";
 import img3 from "../assets/images/parrot.jpg";
+import img5 from "../assets/images/mother.jpg";
 import tl1 from "/timeline/1.avif";
 import tl2 from "/timeline/2.avif";
 import tl3 from "/timeline/3.avif";
@@ -354,6 +355,7 @@ const Home = ({ loaderDone }) => {
         </div>
         <div className="home-content flex w-full flex-col items-center justify-center gap-2 overflow-hidden">
           <div className="page page1 flex h-full w-full flex-col md:flex-row">
+            <img className="main-img" src={img5} alt="" />
             <div className="gola"></div>
             <div className="left w-full p-[1rem] shadow-2xl md:h-[100vh] md:w-1/2 md:p-[2rem] lg:p-[3rem]">
               <h1 className="home-main-text text-[2.8rem] md:text-[3rem] lg:text-[7rem]">
