@@ -140,15 +140,7 @@
       }
     }
 
-    .home-main-text {
-      overflow: hidden;
-      font-size: clamp(2rem, 5.2rem, 5vw);
-      line-height: 1.1;
-      mix-blend-mode: darken;
-    }
-
-    .page,
-    .added_later1 {
+    .page {
       min-height: calc(100vh);
 
       width: 100%;
@@ -165,7 +157,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      max-height: calc(100vh - 40px - 6rem);
+      min-height: calc(100vh - 40px - 6rem);
       background-color: transparent;
       background:
         radial-gradient(
@@ -178,13 +170,159 @@
       position: relative;
       overflow: hidden;
       z-index: 3;
+      background-image: url("assets/mother.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      // background-attachment: fixed;
+      filter: brightness(1.3);
+
+      @media screen and (max-width: 640px) {
+        background-position: left center;
+      }
+
+      .left {
+        background: linear-gradient(
+          to right,
+          rgba(20, 19, 19, 0.096),
+          rgba(19, 19, 19, 0.044)
+        );
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(5px);
+        padding-top: 9rem;
+
+        h1 {
+          color: white;
+          font-weight: 500;
+          line-height: 1;
+        }
+        p {
+          font-weight: 500;
+          margin-top: 1rem;
+          line-height: 1;
+          opacity: 0.7;
+          color: greenyellow;
+        }
+
+        .para {
+          display: flex;
+          flex-direction: column;
+
+          p {
+            color: #fff;
+            line-height: 1;
+          }
+
+          .hdd {
+            color: greenyellow;
+            margin-top: 3rem !important;
+          }
+        }
+        button {
+          letter-spacing: 1.5px;
+          text-transform: uppercase;
+          opacity: 0.7;
+          overflow: hidden;
+          position: relative;
+          border: 1px solid #ede5e5;
+          color: white;
+          font-weight: 500;
+          overflow: hidden;
+
+          &::before {
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: greenyellow;
+            z-index: -1;
+
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          }
+
+          &:hover {
+            color: #070707;
+            opacity: 1;
+            &::before {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .right {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        .tri_img {
+          height: 35vh;
+          width: 25vh;
+          background-color: rgba(135, 205, 13, 0.166);
+          backdrop-filter: blur(5px);
+          position: relative;
+          overflow: hidden;
+
+          .ros {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            will-change: transform;
+            transition: all 0.3s ease;
+            transform: rotate(-45deg) translate(-40%, 32%);
+          }
+
+          p {
+            position: absolute;
+            line-height: 0.8;
+            color: #fff5e1;
+            color: pink;
+            padding: 0.5rem;
+            background: linear-gradient(
+              to bottom,
+              rgba(0, 0, 0, 0.125),
+              rgba(0, 0, 0, 0.1)
+            );
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            width: 80%;
+            z-index: 11;
+          }
+
+          .sir {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            will-change: transform;
+            transition: all 0.3s ease;
+
+            &:hover {
+              transform: scale(1.1);
+              object-position: center -20%;
+            }
+          }
+        }
+      }
     }
 
     .added_later1 {
+      width: 100%;
+
+      background-blend-mode: normal;
+      position: relative;
+      background-color: #fcfcfc;
       display: flex;
       flex-direction: column;
       position: relative;
       z-index: 10;
+      height: 100% !important;
       h1 {
         text-transform: uppercase;
       }
@@ -251,6 +389,7 @@
     .added_later3 {
       z-index: 40;
       position: relative;
+      padding: 1rem;
 
       width: 100vw;
       .gallery-3d {

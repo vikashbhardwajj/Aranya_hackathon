@@ -155,14 +155,14 @@ const Home = ({ loaderDone }) => {
     tl.to(".page1", {
       top: "20%",
       scale: 0.3,
-      // clipPath: "inset(40% 0% 20% 0% round 2rem)",
+      clipPath: "inset(40% 0% 20% 0% round 2rem)",
       ease: "hop2",
 
       opacity: 0.4,
       scrollTrigger: {
         trigger: ".page1",
         scroller: "body",
-        start: "top top",
+        start: "top -10%", // need to be top top in later update
         end: "+=80%",
         scrub: 3,
         pin: true,
@@ -172,16 +172,16 @@ const Home = ({ loaderDone }) => {
 
     if (window.innerWidth >= 750) {
       tl.to(".added_later1", {
-      top: "0%",
-      ease: "power4.in",
-      scrollTrigger: {
-        trigger: ".added_later1",
-        scroller: "body",
-        start: "top top",
-        end: "+=70%",
-        scrub: 2,
-        pin: true,
-      },
+        top: "0%",
+        ease: "power4.in",
+        scrollTrigger: {
+          trigger: ".added_later1",
+          scroller: "body",
+          start: "top top",
+          end: "+=70%",
+          scrub: 2,
+          pin: true,
+        },
       });
     }
 
@@ -353,20 +353,55 @@ const Home = ({ loaderDone }) => {
           </div>
         </div>
         <div className="home-content flex w-full flex-col items-center justify-center gap-2 overflow-hidden">
-          <div className="page page1">
+          <div className="page page1 flex h-full w-full flex-col md:flex-row">
             <div className="gola"></div>
-
-            <h1 className="home-main-text bg-purple-400/10 p-[1rem] text-[1.5rem] leading-none backdrop-blur-xs md:p-[2rem] md:text-[3rem] lg:p-[3rem] lg:text-[4rem]">
-              <WavyText
-                text=" Mother Nature -"
-                y={15}
-                className="inline text-[50px] -tracking-[3px] lg:text-[10rem] lg:-tracking-[9px]"
-              />{" "}
-              <br />
-              <span> "The first influencer we ever followed"</span>
-            </h1>
+            <div className="left w-full p-[1rem] shadow-2xl md:h-[100vh] md:w-1/2 md:p-[2rem] lg:p-[3rem]">
+              <h1 className="home-main-text text-[2.8rem] md:text-[3rem] lg:text-[7rem]">
+                <WavyText text=" Mother Nature -" y={-35} />
+              </h1>
+              <p className="text-2xl lg:text-3xl">
+                "The first influencer we ever followed"
+              </p>
+              <div className="para lg:mt-[3rem] lg:w-[65%]">
+                <p className="text-lg leading-none font-bold tracking-wider uppercase opacity-70 md:text-2xl">
+                  Think of your mother — how she tucked you in, how her hands
+                  held your first tears, how her silence still said “I’m here.”
+                </p>
+                <p className="text-lg leading-none font-bold tracking-wider uppercase opacity-70 md:text-2xl">
+                  Now look at the soil beneath your feet, the shade above your
+                  head. Isn’t that love too?
+                </p>
+                <p className="text-lg leading-none font-bold tracking-wider uppercase opacity-70 md:text-2xl">
+                  Aranya is a tribute — not just to the forests, but to the
+                  mother we’ve all overlooked.
+                </p>
+                <p className="hdd text-base italic lg:text-xl">
+                  She never left. We just forgot how to feel her hug.
+                </p>
+              </div>
+              <button className="mt-[3rem] self-start rounded-full px-4 py-2 text-xs md:mt-[2.5rem]">
+                <WavyText text="“Return to Her Arms”" y={20} />
+              </button>
+            </div>
+            <div className="right mt-6 w-full md:mt-0 md:h-[100vh] md:w-1/2">
+              <div className="tri_img relative mr-3 mb-3 rounded-4xl p-2 shadow-2xl">
+                <img
+                  src="/assets/sir-mother3.png"
+                  className="sir rounded-4xl shadow-2xl"
+                  alt=""
+                />
+                <p className="absolute bottom-4 left-5 overflow-hidden rounded-2xl font-semibold">
+                  A mother’s love, forever remembered.
+                </p>
+                <img
+                  className="ros absolute bottom-0"
+                  src="/assets/ros.png"
+                  alt=""
+                />
+              </div>
+            </div>
           </div>
-          <div className="added_later1 bg-red-300 p-[1rem] md:p-[2rem]">
+          <div className="added_later1 p-[1rem] md:p-[2rem]">
             <p className="mb-6 text-xl leading-none font-bold tracking-wider uppercase opacity-70 md:w-[70%] md:text-3xl lg:w-[40%]">
               Welcome to Aranya — A space where every creation honors the earth.
               Explore natural symbols turned into purposeful offerings.
@@ -466,7 +501,7 @@ const Home = ({ loaderDone }) => {
                     src={img2}
                     alt=""
                   />
-                  <p className="mt-[4rem] mb-2 h-fit pb-5 text-4xl font-bold md:mt-0 md:w-[90%] md:text-5xl lg:w-[80%]">
+                  <p className="mt-[4rem] mb-2 h-fit pb-5 text-3xl leading-none font-bold md:mt-0 md:w-[90%] md:text-5xl lg:w-[80%]">
                     "Before trends and technology, we listened to the whisper of
                     trees, rivers, and winds."
                   </p>
